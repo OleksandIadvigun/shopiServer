@@ -85,7 +85,7 @@ template:
 Vue.component('shop-row', {
 props: ['shop', 'editMethod', 'shops'],
 template: '<div>' +
-         '<i>(id:{{ shop.id }}) </i><span style="color: #A4A4A4">{{ shop.name }} </span>' +
+         '<span style="color: #A4A4A4">{{ shop.name }} </span>' +
           '(latitude: {{shop.latitude}}) (longitude: {{shop.longitude}}) (area size: {{shop.areaSize}} m)' +
          '<span style="position: absolute; right: 0">' +
          '<input type="button" value="Edit" @click="edit" />' +

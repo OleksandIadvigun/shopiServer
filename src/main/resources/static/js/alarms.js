@@ -86,7 +86,7 @@ template:
 Vue.component('product-row', {
 props: ['product', 'editMethod', 'products'],
 template: '<div>' +
-         '<i>(id:{{ product.id }}) </i><span style="color: #01DF01">{{ product.name }} </span>' +
+         '<span style="color: #01DF01">{{ product.name }} </span>' +
          '(amount: {{product.amount}}) (expiration: {{product.expiration}})' +
           '(alarm date: <span style="color: #DF0101">{{product.overdueDate}}</span>) ' +
          '<span style="position: absolute; right: 0">' +
