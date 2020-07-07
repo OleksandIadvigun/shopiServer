@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+<style>
+   body {
+    background: #424242;
+    color: #F5DA81;
+   }
+   A {
+    color: #DF7401; /* Цвет текста */
+   /* background: #D8D8D8;*/ /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+   }
+  </style>
+<!--<div th:if="${param.error}">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}">
+    You have been logged out.
+</div>-->
+<p>       </p>
+<form action="/login" method="post">
+    <div><label> User Name: <input type="text" name="username"/> </label></div>
+    <div><label> Password:  <input type="password" name="password"/> </label></div>
+    <div><input type="submit" value="Sign In"/></div>
+</form>
+</body>
+</html>
