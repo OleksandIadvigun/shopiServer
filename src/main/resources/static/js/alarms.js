@@ -32,11 +32,11 @@ return {
    }
  },
 template:
-'<div style="position: center; width: 500px;">' +
+'<div style="position: relative; width: 500px;">' +
 '<div style="position: relative; width: 400px;" >' +
 '<input type ="text" placeholder="Add new product" v-model="name" />' +
 '</div>' +
-'<div style="position: relative; width: 4000px;" >' +
+'<div style="position: relative; width: 400px;" >' +
 '<input type ="number" placeholder="Add amount" v-model="amount" />' +
 '</div>' +
 '<input type ="number" placeholder="Expiration/number of days" v-model="expiration" />' +
