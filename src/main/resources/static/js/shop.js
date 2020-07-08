@@ -116,7 +116,7 @@ Vue.component('shops-list', {
     }
   },
   template:
-  '<div style="position: relative; width: 650px;" >' +
+  '<div style="position: relative; width: 750px;" >' +
   '<shop-form :shops="shops" :shopAttr="shop" />' +
   '<shop-row v-for="shop in shops" :key="shop.id" :shop="shop" :editMethod="editMethod" ' +
   ':shops="shops" />' +

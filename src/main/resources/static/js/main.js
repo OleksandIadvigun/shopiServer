@@ -106,7 +106,7 @@ Vue.component('products-list', {
     }
   },
   template:
-  '<div style="position: relative; width: 450px;" >' +
+  '<div style="position: relative; width: 550px;" >' +
   '<product-form :products="products" :productAttr="product" />' +
   '<product-row v-for="product in products" :key="product.id" :product="product" :editMethod="editMethod" ' +
   ':products="products" />' +
