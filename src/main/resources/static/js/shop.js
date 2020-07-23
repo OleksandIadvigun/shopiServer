@@ -33,19 +33,21 @@ return {
    }
  },
 template:
-'<div style="position: relative; width: 650px;">' +
-'<div style="position: relative; width: 350px;" >' +
-'<input type ="text" placeholder="Add shop name" v-model="name" />' +
+'<div style="position: relative; left: 28%">' +
+'<div style="position: relative; right: 27.5%" >' +
+'<input type ="text" placeholder="Add shop name" v-model="name" style="marginBottom: 4px; fontSize: 13px;  border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DCDCDC" />' +
 '</div>' +
-'<div style="position: relative; width: 350px;" >' +
-'<input type ="number" placeholder="Input latitude" v-model="latitude" />' +
+'<div style="position: relative; right: 27.5%" >' +
+'<input type ="number" placeholder="Input latitude" v-model="latitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
 '</div>' +
-'<div style="position: relative; width: 350px;" >' +
-'<input type ="number" placeholder="Input longitude" v-model="longitude" />' +
+'<div style="position: relative; right: 27.5%">' +
+'<input type ="number" placeholder="Input longitude" v-model="longitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
 '</div>' +
-'<input type ="number" placeholder="Input area size" v-model="areaSize" />' +
-'<input type ="button" value="Add shop" @click="save" />' +
-'<div>SHOPS:</div>' +
+'<div style="position: relative; right: 22.8%">' +
+'<input type ="number" placeholder="Input area size" v-model="areaSize" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
+'<input type ="button" value="Add shop" @click="save" style="marginLeft: 7px; color: #DCDCDC; background: #008080; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
+'</div>' +
+'<div style="position: relative; right: 28%; marginBottom: 5px; marginTop: 20px">SHOPS:</div>' +
  '</div>' ,
  methods: {
      save: function() {
@@ -84,12 +86,14 @@ template:
 // Определяем новый компонент под именем todo-item
 Vue.component('shop-row', {
 props: ['shop', 'editMethod', 'shops'],
-template: '<div>' +
-         '<span style="color: #A4A4A4">{{ shop.name }} </span>' +
-          '(latitude: {{shop.latitude}}) (longitude: {{shop.longitude}}) (area size: {{shop.areaSize}} m)' +
-         '<span style="position: absolute; right: 0">' +
-         '<input type="button" value="Edit" @click="edit" />' +
-         '<input type="button" value="X" @click="del" />' +
+template: '<div style="marginBottom: 7px; fontWeight: lighter; border: 1px solid; borderColor: #A4A4A4;  padding: 7px; border-radius: 5px" >' +
+         '<span style="color: #66CDAA; position: absolute; left: 23%">{{ shop.name }} </span>' +
+          '<span style=" position: absolute; left: 37%; fontWeight: lighter "> latitude: {{shop.latitude}} </span>' +
+          '<span style=" position: relative; left: 15%"> longitude: {{shop.longitude}} </span>' +
+           '<span style=" position: relative; left: 20%"> area: {{shop.areaSize}} m </span>' +
+         '<span style="position: absolute; right: 21% ">' +
+         '<input type="button" value="Edit" @click="edit" style="marginRight: 5px; color: #DCDCDC; background: #696969; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px"  />' +
+         '<input type="button" value="X" @click="del" style= "color: #DCDCDC ; background: #B22222; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
          '</span>' +
          '</div>',
 
@@ -116,7 +120,7 @@ Vue.component('shops-list', {
     }
   },
   template:
-  '<div style="position: relative; width: 750px;" >' +
+  '<div style=" marginLeft: 20%; marginRight: 20%">' +
   '<shop-form :shops="shops" :shopAttr="shop" />' +
   '<shop-row v-for="shop in shops" :key="shop.id" :shop="shop" :editMethod="editMethod" ' +
   ':shops="shops" />' +
