@@ -35,16 +35,16 @@ return {
 template:
 '<div style="position: relative; left: 28%">' +
 '<div style="position: relative; right: 27.5%" >' +
-'<input type ="text" placeholder="Add shop name" v-model="name" style="marginBottom: 4px; fontSize: 13px;  border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DCDCDC" />' +
+'<input type ="text" placeholder="Add shop name" v-model="name" style="marginBottom: 4px; fontSize: 13px;  border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DCDCDC" />' +
 '</div>' +
 '<div style="position: relative; right: 27.5%" >' +
-'<input type ="number" placeholder="Input latitude" v-model="latitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
+'<input type ="number" placeholder="Input latitude" v-model="latitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
 '</div>' +
 '<div style="position: relative; right: 27.5%">' +
-'<input type ="number" placeholder="Input longitude" v-model="longitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
+'<input type ="number" placeholder="Input longitude" v-model="longitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
 '</div>' +
 '<div style="position: relative; right: 22.8%">' +
-'<input type ="number" placeholder="Input area size" v-model="areaSize" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
+'<input type ="number" placeholder="Input area size" v-model="areaSize" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
 '<input type ="button" value="Add shop" @click="save" style="marginLeft: 7px; color: #DCDCDC; background: #008080; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
 '</div>' +
 '<div style="position: relative; right: 28%; marginBottom: 5px; marginTop: 20px">SHOPS:</div>' +
@@ -92,8 +92,8 @@ template: '<div style="marginBottom: 7px; fontWeight: lighter; border: 1px solid
           '<span style=" position: relative; left: 15%"> longitude: {{shop.longitude}} </span>' +
            '<span style=" position: relative; left: 20%"> area: {{shop.areaSize}} m </span>' +
          '<span style="position: absolute; right: 21% ">' +
-         '<input type="button" value="Edit" @click="edit" style="marginRight: 5px; color: #DCDCDC; background: #696969; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px"  />' +
-         '<input type="button" value="X" @click="del" style= "color: #DCDCDC ; background: #B22222; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
+         '<input type="button" value="Edit" @click="edit" style="marginRight: 5px; color: #bfbfbf; background: #424242; border: 1px solid; borderColor: #bfbfbf; border-radius: 4px"  />' +
+         '<input type="button" value="X" @click="del" style= "color: #bfbfbf ; background: #B22222; border: 1px solid; borderColor: #bfbfbf; border-radius: 4px" />' +
          '</span>' +
          '</div>',
 

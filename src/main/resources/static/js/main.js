@@ -32,13 +32,13 @@ return {
 template:
 '<div style="position: relative; left: 28%">' +
 '<div style="position: relative; right: 27.5%" >' +
-'<input type ="text" placeholder="Add new product" v-model="name" style="marginBottom: 4px; fontSize: 13px;  border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DCDCDC" />' +
+'<input type ="text" placeholder="Add new product" v-model="name" style="marginBottom: 4px; fontSize: 13px;  border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DCDCDC" />' +
 '</div>' +
 '<div style="position: relative; right: 27.5%" >' +
-'<input type ="number" placeholder="Add amount" v-model="amount" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" />' +
+'<input type ="number" placeholder="Add amount" v-model="amount" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
 '</div>' +
 '<div style="position: relative; right: 27.5%">' +
-'<input type ="number" placeholder="Expiration/number of days" v-model="expiration" style="border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #424242; color: #DF7401" /> </div>' +
+'<input type ="number" placeholder="Expiration/number of days" v-model="expiration" style="border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" /> </div>' +
 '<div style="position: absolute; right: 54.5%; top: 57% " >' +
 '<input type ="button" value="Add product" @click="save" style="marginLeft: 7px; color: #DCDCDC; background: #008080; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
 '</div>' +
@@ -83,8 +83,8 @@ template: '<div style="marginBottom: 7px; fontWeight: lighter; border: 1px solid
          '<span style=" position: absolute; left: 40%; fontWeight: lighter "> amount: {{product.amount}}</span>' +
          '<span style=" position: relative; left: 20%"> expiration: {{product.expiration}} day (s) </span>' +
          '<span style="position: absolute; right: 21% ">' +
-         '<input type="button" value="Edit" @click="edit" style="marginRight: 5px; color: #DCDCDC; background: #696969; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px"  />' +
-         '<input type="button" value="X" @click="del" style= "color: #DCDCDC ; background: #B22222; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
+         '<input type="button" value="Edit" @click="edit" style="marginRight: 5px; color: #bfbfbf; background: #424242; border: 1px solid; borderColor: #bfbfbf; border-radius: 4px"  />' +
+         '<input type="button" value="X" @click="del" style= "color: #bfbfbf ; background: #B22222; border: 1px solid; borderColor: #bfbfbf; border-radius: 4px" />' +
          '</span>' +
          '</div>',
 
