@@ -44,6 +44,7 @@ template:
 '</div>' +
 '<div style="position: relative; right: 28%; marginTop: 10px; marginBottom: 5px">PRODUCTS:</div>' +
  '</div>' ,
+ //commit
  methods: {
      save: function() {
      var product = { name: this.name, amount: this.amount, expiration: this.expiration }
