@@ -43,8 +43,9 @@ template:
 '<div style="position: relative; right: 27.5%">' +
 '<input type ="number" placeholder="Input longitude" v-model="longitude" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
 '</div>' +
-'<div style="position: relative; right: 22.8%">' +
-'<input type ="number" placeholder="Input area size" v-model="areaSize" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" />' +
+'<div style="position: relative; right: 27.5%">' +
+'<input type ="number" placeholder="Input area size" v-model="areaSize" style="marginBottom: 4px; border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" /></div>' +
+'<div style="position: absolute; right: 56.5%; top: 60% " >' +
 '<input type ="button" value="Add shop" @click="save" style="marginLeft: 7px; color: #DCDCDC; background: #008080; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
 '</div>' +
 '<div style="position: relative; right: 28%; marginBottom: 5px; marginTop: 20px">SHOPS:</div>' +

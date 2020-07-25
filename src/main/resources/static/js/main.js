@@ -39,10 +39,10 @@ template:
 '</div>' +
 '<div style="position: relative; right: 27.5%">' +
 '<input type ="number" placeholder="Expiration/number of days" v-model="expiration" style="border: 1px solid; borderColor: #A4A4A4;  padding: 5px; border-radius: 5px; background: #333333; color: #DF7401" /> </div>' +
-'<div style="position: absolute; right: 54.5%; top: 57% " >' +
+'<div style="position: absolute; right: 54.5%; top: 52% " >' +
 '<input type ="button" value="Add product" @click="save" style="marginLeft: 7px; color: #DCDCDC; background: #008080; border: 1px solid; borderColor: #DCDCDC; border-radius: 4px" />' +
 '</div>' +
-'<div style="position: relative; right: 28%; marginTop: 10px; marginBottom: 5px">PRODUCTS:</div>' +
+'<div style="position: relative; right: 28%; marginTop: 20px; marginBottom: 5px">PRODUCTS:</div>' +
  '</div>' ,
  //commit
  methods: {
