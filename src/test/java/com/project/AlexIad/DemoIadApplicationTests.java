@@ -1,8 +1,8 @@
-package com.example.demoIad;
+package com.project.AlexIad;
 
-import com.example.demoIad.controller.AlarmController;
-import com.example.demoIad.domain.Product;
-import com.example.demoIad.repos.ProductRepo;
+import com.project.AlexIad.controller.AlarmController;
+import com.project.AlexIad.domain.Product;
+import com.project.AlexIad.repos.ProductRepo;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

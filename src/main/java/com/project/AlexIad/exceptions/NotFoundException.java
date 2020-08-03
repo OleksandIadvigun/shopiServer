@@ -1,4 +1,4 @@
-package com.example.demoIad.exceptions;
+package com.project.AlexIad.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,4 +1,4 @@
-package com.example.demoIad.domain;
+package com.project.AlexIad.domain;
 
 public final class Views {
     public interface IdName{}

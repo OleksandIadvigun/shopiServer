@@ -1,9 +1,9 @@
-package com.example.demoIad.controller;
+package com.project.AlexIad.controller;
 
 
-import com.example.demoIad.domain.Product;
-import com.example.demoIad.domain.Views;
-import com.example.demoIad.repos.ProductRepo;
+import com.project.AlexIad.domain.Product;
+import com.project.AlexIad.domain.Views;
+import com.project.AlexIad.repos.ProductRepo;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ public class ProductController {
     @Autowired
     public ProductController(ProductRepo productRepo) {
         this.productRepo = productRepo;
-   }
+    }
 
 
     @GetMapping
@@ -35,7 +35,7 @@ public class ProductController {
     }
 
     @GetMapping("{id}")
-    public Product getOne(@PathVariable ("id") Product product) {
+    public Product getOne(@PathVariable("id") Product product) {
         return product;
     }
 
@@ -48,17 +48,17 @@ public class ProductController {
     }
 
     @PutMapping("{id}")
-    public Product update(@PathVariable ("id") Product productFromDB,
+    public Product update(@PathVariable("id") Product productFromDB,
                           @RequestBody Product product) {      // message from user
 
         BeanUtils.copyProperties(product, productFromDB, "id");
         productFromDB.setCreationDate(LocalDateTime.now());
         productFromDB.setOverdueDate(productFromDB.getCreationDate().plusDays(productFromDB.getExpiration()));
-        return productRepo.save(productFromDB) ;
+        return productRepo.save(productFromDB);
     }
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable ("id") Product product) {
+    public void delete(@PathVariable("id") Product product) {
 
         productRepo.delete(product);
     }

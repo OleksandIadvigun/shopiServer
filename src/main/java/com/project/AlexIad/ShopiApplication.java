@@ -1,4 +1,4 @@
-package com.example.demoIad;
+package com.project.AlexIad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

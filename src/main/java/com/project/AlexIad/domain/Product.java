@@ -1,9 +1,8 @@
-package com.example.demoIad.domain;
+package com.project.AlexIad.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonView;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
@@ -16,9 +15,9 @@ import java.time.LocalDateTime;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-     @JsonView(Views.IdName.class)
+    @JsonView(Views.IdName.class)
     private Long id;
-     @JsonView(Views.IdName.class)
+    @JsonView(Views.IdName.class)
     private String name;
     @JsonView(Views.IdName.class)
     private int amount;
@@ -41,7 +40,6 @@ public class Product {
     }
 
 
-
     public Product() {
     }
 
@@ -50,7 +48,6 @@ public class Product {
         this.amount = amount;
         this.expiration = expiration;
     }
-
 
 
     public int getAmount() {
@@ -68,8 +65,6 @@ public class Product {
     public void setExpiration(int expiration) {
         this.expiration = expiration;
     }
-
-
 
 
     public LocalDateTime getCreationDate() {

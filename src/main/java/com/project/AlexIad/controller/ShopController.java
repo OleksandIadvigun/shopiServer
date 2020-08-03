@@ -1,24 +1,20 @@
-package com.example.demoIad.controller;
+package com.project.AlexIad.controller;
 
-import com.example.demoIad.domain.Product;
-import com.example.demoIad.domain.Shop;
-import com.example.demoIad.repos.ProductRepo;
-import com.example.demoIad.repos.ShopRepo;
+import com.project.AlexIad.domain.Shop;
+import com.project.AlexIad.repos.ShopRepo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/shop")
 public class ShopController {
 
-   private final ShopRepo shopRepo;
+    private final ShopRepo shopRepo;
 
     @Autowired
     public ShopController(ShopRepo shopRepo) {
@@ -31,6 +27,7 @@ public class ShopController {
         model.addAttribute("name", name);
         return (List<Shop>) shopRepo.findAll();
     }
+
     @GetMapping("{id}")
     public Shop getOne(@PathVariable("id") Shop shop) {
         return shop;
@@ -43,15 +40,15 @@ public class ShopController {
     }
 
     @PutMapping("{id}")
-    public Shop update(@PathVariable ("id") Shop shopFromDB,
-                          @RequestBody Shop shop) {      // message from user
+    public Shop update(@PathVariable("id") Shop shopFromDB,
+                       @RequestBody Shop shop) {      // message from user
 
         BeanUtils.copyProperties(shop, shopFromDB, "id");
-        return shopRepo.save(shopFromDB) ;
+        return shopRepo.save(shopFromDB);
     }
 
     @DeleteMapping("{id}")
-    public void delete(@PathVariable ("id") Shop shop) {
+    public void delete(@PathVariable("id") Shop shop) {
 
         shopRepo.delete(shop);
     }

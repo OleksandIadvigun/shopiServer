@@ -1,10 +1,8 @@
-package com.example.demoIad.domain;
-
+package com.project.AlexIad.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonView;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
@@ -12,7 +10,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@ToString(of = {"id", "name", "longitude","latitude", "creationDate"})
+@ToString(of = {"id", "name", "longitude", "latitude", "creationDate"})
 @EqualsAndHashCode(of = {"id"})
 public class Shop {
     @Id
@@ -46,7 +44,7 @@ public class Shop {
     @JsonView(Views.ShopView.class)
     private int areaSize;
 
-    @Column(updatable = false )
+    @Column(updatable = false)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonView(Views.ShopView.class)
     private LocalDateTime creationDate;
@@ -89,7 +87,6 @@ public class Shop {
     public void setCreationDate(LocalDateTime creationDate) {
         this.creationDate = creationDate;
     }
-
 
 
     public Shop() {

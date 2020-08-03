@@ -1,10 +1,9 @@
-package com.example.demoIad.controller;
+package com.project.AlexIad.controller;
 
-import com.example.demoIad.domain.Product;
-import com.example.demoIad.domain.Views;
-import com.example.demoIad.repos.ProductRepo;
+import com.project.AlexIad.domain.Product;
+import com.project.AlexIad.domain.Views;
+import com.project.AlexIad.repos.ProductRepo;
 import com.fasterxml.jackson.annotation.JsonView;
-import lombok.Generated;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +32,7 @@ public class AlarmController {
         List<Product> all = (List<Product>) productRepo.findAll();
         List<Product> sortedList = all.stream().sorted(Comparator.comparing(a ->
                 a.getOverdueDate()))
-                    .filter(a -> a.getOverdueDate().isBefore(localDateTime) ||
+                .filter(a -> a.getOverdueDate().isBefore(localDateTime) ||
                         a.getOverdueDate().isEqual(localDateTime))
                 .collect(Collectors.toList());
         return sortedList;
